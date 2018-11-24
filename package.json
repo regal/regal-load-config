@@ -1,0 +1,19 @@
+{
+  "name": "regal-load-config",
+  "version": "1.0.0",
+  "description": "Configuration loading script for internal use within the Regal Game Library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/regal/regal-load-config.git"
+  },
+  "author": "Joe Cowman <joe.r.cowman@gmail.com> (http://joecowman.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/regal/regal-load-config/issues"
+  },
+  "homepage": "https://github.com/regal/regal-load-config#readme"
+}
