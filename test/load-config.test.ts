@@ -2,10 +2,10 @@ import { expect } from "chai";
 import "mocha";
 
 import { resolve } from "path";
-import { readConfigFile, loadConfig } from "../../src/load-config";
-import { MetadataManager } from "../../src/config";
-import { RegalError } from "../../src/error";
-import { expectedPromiseFailure } from "../test-utils";
+import { readConfigFile, loadConfig } from "../src/regal-load-config";
+import { MetadataManager } from "regal/dist/config";
+import { expectedPromiseFailure } from "./test-utils";
+import { RegalError } from "regal";
 
 const dummyConfigPath = (end: any) =>
     resolve(`./test/resources/dummy-config-${end}`);
