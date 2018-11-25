@@ -14,8 +14,8 @@
  */
 
 import * as cosmiconfig from "cosmiconfig";
-import { GameMetadata, RegalError, GameOptions } from "regal";
-import { validateOptions, MetadataManager } from "regal/dist/config";
+import { GameMetadata, GameOptions, RegalError } from "regal";
+import { MetadataManager, validateOptions } from "regal/dist/config";
 
 const explorer = cosmiconfig("regal", {
     searchPlaces: ["package.json", "regal.json"]
