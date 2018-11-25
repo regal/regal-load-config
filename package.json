@@ -18,7 +18,11 @@
   ],
   "scripts": {
     "test": "nyc mocha",
-    "build": "tsc"
+    "build": "tsc",
+    "publish-coverage": "nyc report --reporter=text-lcov | coveralls",
+    "check-coverage": "nyc check-coverage --lines 100 --functions 100 --branches 100",
+    "lint": "node node_modules/tslint/bin/tslint -c tslint.json --format stylish 'src/**/*.ts'",
+    "commit": "git-cz"
   },
   "dependencies": {
     "cosmiconfig": "^5.0.7",
@@ -29,6 +33,9 @@
     "@types/cosmiconfig": "^5.0.3",
     "@types/mocha": "^5.2.5",
     "chai": "^4.2.0",
+    "commitizen": "^3.0.4",
+    "coveralls": "^3.0.2",
+    "cz-conventional-changelog": "^2.1.0",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
     "prettier": "^1.15.2",
@@ -58,5 +65,10 @@
     ],
     "sourceMap": true,
     "instrument": true
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
