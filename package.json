@@ -49,23 +49,6 @@
   "prettier": {
     "tabWidth": 4
   },
-  "nyc": {
-    "include": [
-      "src/**/*.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ],
-    "reporter": [
-      "text-summary",
-      "html"
-    ],
-    "sourceMap": true,
-    "instrument": true
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
